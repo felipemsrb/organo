@@ -18,13 +18,14 @@ const Formulario = () => {
 
     const  aoSalvar = (evento) => {
         evento.preventDefault()
-        console.log('hello there')
+        console.log('hello there', nome, cargo, imagem, time)
 
     }
 
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
+    const [time, setTime] = useState('')
 
 
     return (
@@ -51,7 +52,13 @@ const Formulario = () => {
                 valor={imagem}
                 aoAlterado={valor => setImagem(valor)}
                 />
-                <ListaSuspensa obrigatorio = {true} label = 'Time' item = {times} />
+                <ListaSuspensa 
+                obrigatorio = {true} 
+                label = 'Time' 
+                item = {times} 
+                valor={time}
+                aoAlterado={valor => setTime(valor)}
+                />
                 <Botao>
                     Carregar arquivos
                 </Botao>
