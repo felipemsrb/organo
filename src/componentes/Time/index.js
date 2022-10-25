@@ -1,7 +1,11 @@
-import './Time.css'
+import "./Time.css";
 
 const Time = () => {
-    return ()
-}
+  return (
+    <section>
+      <h3>Teste</h3>
+    </section>
+  );
+};
 
-export default Time
+export default Time;
