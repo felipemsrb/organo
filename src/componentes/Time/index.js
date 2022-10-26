@@ -1,9 +1,9 @@
 import "./Time.css";
 
-const Time = () => {
+const Time = (props) => {
   return (
-    <section>
-      <h3>Teste</h3>
+    <section className="time">
+      <h3>{props.nome}</h3>
     </section>
   );
 };
