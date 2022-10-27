@@ -7,7 +7,7 @@ const Colaborador = ({ nome, cargo, imagem }) => {
         <img src={imagem} alt="Foto do colaborador"></img>
       </div>
 
-      <div className="rodape">
+      <div className="cargonome">
         <h4>{nome}</h4>
         <h5>{cargo}</h5>
       </div>
