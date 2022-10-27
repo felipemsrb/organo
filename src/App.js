@@ -20,7 +20,6 @@ function App() {
   const [colaboradores, setColaboradores] = useState([]);
   const aoNovoColaboradorAdicionado = (colaborador) => {
     setColaboradores([...colaboradores, colaborador]);
-    console.log(colaborador);
   };
 
   return (
@@ -38,6 +37,7 @@ function App() {
           nome={time.nome}
           corPrimaria={time.corPrimaria}
           corSecundaria={time.corSecundaria}
+          colaboradores={colaboradores}
         />
       ))}
     </div>
